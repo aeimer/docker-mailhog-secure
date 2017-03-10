@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER Alexander Eimer <https://github.com/aeimer>
 # Published from http://github.com/aeimer
 
 ENV MH_USER mhog
