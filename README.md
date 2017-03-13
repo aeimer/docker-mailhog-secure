@@ -12,4 +12,4 @@ This instance will run with a in-memory-database, so if you stop the container i
 ## Run
 `docker run -td -e 'MH_USER=myuser' -e 'MH_PWD=mypw' -p 25:1025 -p 8025:8025 aeimer/mailhog-secure`
 
-The default credentials are `mhog` => `mhog123`, change them with the 
+The default credentials are `mhog` => `mhog123`, change them with the environment-variables `MH_USER` and `MH_PWD`.
