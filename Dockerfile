@@ -19,4 +19,4 @@ RUN apt-get update \
 # Expose the SMTP and HTTP ports:
 EXPOSE 1025 8025
 
-CMD "echo $(echo $MH_USER):$(mailhog bcrypt $MH_PWD) > auth_file && mailhog -auth-file auth_file"
+CMD echo $MH_USER:$(mailhog bcrypt $MH_PWD) > auth_file && mailhog -auth-file=auth_file
