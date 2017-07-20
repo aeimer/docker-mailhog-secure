@@ -14,7 +14,7 @@ RUN apt-get update \
   && cd \
   && wget https://github.com/mailhog/MailHog/releases/download/v0.2.1/MailHog_linux_amd64 \
   && cp MailHog_linux_amd64 /usr/bin/mailhog \
-  && chmod +x /usr/bin/mailhog
+  && chmod +x /usr/bin/mailhog \
   && rm -rf /var/lib/apt/lists/*
 
 # Expose the SMTP and HTTP ports:
